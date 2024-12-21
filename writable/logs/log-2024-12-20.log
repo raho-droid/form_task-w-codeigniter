@@ -1,0 +1,631 @@
+ERROR - 2024-12-20 04:59:09 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'form_task' in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'form_task', 3306, '', 0)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'form_task' in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(1485): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(1505): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MigrationRunner.php(759): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MigrationRunner.php(163): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-12-20 05:17:41 --> Error: Class "App\Controllers\ProductModel" not found
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:19:16 --> Error: Class "App\Controllers\ProductModel" not found
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:21:10 --> Error: Class "App\Controllers\ProductModel" not found
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+ERROR - 2024-12-20 05:23:27 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\app\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Hp\\Des...')
+#16 {main}
+CRITICAL - 2024-12-20 05:23:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: product/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:27\', \'2024-12-20 05:23:27\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:27\', \'2024-12-20 05:23:27\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:27 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:27\', \'2024-12-20 05:23:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:27\', \'2024-12-20 05:23:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:27\', \'2024-12-20 05:23:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+ERROR - 2024-12-20 05:23:35 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\app\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Hp\\Des...')
+#16 {main}
+CRITICAL - 2024-12-20 05:23:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: product/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:35\', \'2024-12-20 05:23:35\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:35\', \'2024-12-20 05:23:35\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:35 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:35\', \'2024-12-20 05:23:35\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:35\', \'2024-12-20 05:23:35\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfgdsfgd\', \'dfgdfgdfgdfg\', \'sdsdsds\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:35\', \'2024-12-20 05:23:35\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+ERROR - 2024-12-20 05:23:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\app\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Hp\\Des...')
+#16 {main}
+CRITICAL - 2024-12-20 05:23:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: product/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfsgdfgsdfgsdfgd\', \'sfgdfsgsdfgdsg\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:58\', \'2024-12-20 05:23:58\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfsgdfgsdfgsdfgd\', \'sfgdfsgsdfgdsg\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:58\', \'2024-12-20 05:23:58\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:23:58 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfsgdfgsdfgsdfgd\', \'sfgdfsgsdfgdsg\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:58\', \'2024-12-20 05:23:58\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfsgdfgsdfgsdfgd\', \'sfgdfsgsdfgdsg\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:58\', \'2024-12-20 05:23:58\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (\'dfsgdfgsdfgsdfgd\', \'sfgdfsgsdfgdsg\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'yes\', \'active\', \'show\', NULL, \'null\', (\'a\'), (\'\'), (\'\'), (\'\'), (\'\'), (\'\'), \'2024-12-20 05:23:58\', \'2024-12-20 05:23:58\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\ProductController.php(48): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:52:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-20 05:52:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:52:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:52:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:53:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:55:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(15): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:55:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(15): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:55:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(15): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:56:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: product_add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(15): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:56:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: product_add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(14): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:57:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: product_add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(14): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:57:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "products_add.php"
+[Method: GET, Route: product_add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('products_add.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('products_add', [], true)
+ 3 APPPATH\Controllers\ProductController.php(14): view('products_add')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 05:58:46 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 06:01:49 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 06:03:07 --> Error: Call to a member function getName() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 06:03:18 --> Error: Call to a member function getName() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 06:04:35 --> Error: Call to a member function getName() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 19:58:03 --> Error: Call to a member function isValid() on array
+[Method: POST, Route: product/save]
+in APPPATH\Controllers\ProductController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+ERROR - 2024-12-20 19:59:49 --> Error connecting to the database: mysqli_sql_exception: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:186
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(186): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'form_task', 3306, '', 0)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\app\Controllers\ProductController.php(82): CodeIgniter\BaseModel->save(Array)
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Hp\\Des...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı in C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#3 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#5 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#6 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\app\Controllers\ProductController.php(82): CodeIgniter\BaseModel->save(Array)
+#8 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\Hp\Desktop\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Hp\\Des...')
+#15 {main}
+CRITICAL - 2024-12-20 19:59:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Hedef makine etkin olarak reddettiğinden bağlantı kurulamadı
+[Method: POST, Route: product/save]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`product_title`, `product_extra_info_title`, `product_extra_info_description`, `meta_title`, `meta_keywords`, `meta_description`, `seo_address`, `product_description`, `video_embed_code`, `product_code`, `quantity`, `extra_discount`, `tax_rate`, `sale_price`, `second_sale_price`, `deduct_from_stock`, `status`, `feature_section`, `main_image`, `detail_images`, `customer_group`, `price_tl`, `price_usd`, `price_eur`, `start_date`, `end_date`, `created_at`, `updated_at`) VALUES (:product_title:, :product_extra_info_title:, :product_extra_info_description:, :meta_title:, :meta_keywords:, :meta_description:, :seo_address:, :product_description:, :video_embed_code:, :product_code:, :quantity:, :extra_discount:, :tax_rate:, :sale_price:, :second_sale_price:, :deduct_from_stock:, :status:, :feature_section:, :main_image:, :detail_images:, :customer_group:, :price_tl:, :price_usd:, :price_eur:, :start_date:, :end_date:, :created_at:, :updated_at:)', [...], false)
+ 3 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH\Controllers\ProductController.php(82): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->save()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:03:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "product_edit.php"
+[Method: GET, Route: products/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('product_edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 3 APPPATH\Controllers\ProductController.php(99): view('product_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:13:54 --> ErrorException: Undefined array key "extra_info_title"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\product_edit.php on line 98.
+ 1 APPPATH\Views\product_edit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extra_info_title"', 'C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(99): view('product_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->editPage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:14:39 --> ErrorException: Undefined array key "extra_info_title"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\product_edit.php on line 98.
+ 1 APPPATH\Views\product_edit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extra_info_title"', 'C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(99): view('product_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->editPage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:16:18 --> ErrorException: Undefined array key "extra_info_title"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\product_edit.php on line 98.
+ 1 APPPATH\Views\product_edit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extra_info_title"', 'C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(100): view('product_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->editPage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:16:22 --> ErrorException: Undefined array key "extra_info_title"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\product_edit.php on line 98.
+ 1 APPPATH\Views\product_edit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extra_info_title"', 'C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(100): view('product_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->editPage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-12-20 20:17:07 --> ErrorException: Undefined array key "extra_info_title"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\product_edit.php on line 98.
+ 1 APPPATH\Views\product_edit.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "extra_info_title"', 'C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php', 98)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\app\\Views\\product_edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('product_edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(99): view('product_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProductController->editPage('2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Hp\\Desktop\\codeigniter4-framework-2849e7f\\public\\index.php')
